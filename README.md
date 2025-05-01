@@ -10,6 +10,7 @@ This guide will help you set up and use the REMOTE POWER TOOL to control your Wi
 📌 What Does This Tool Do?
 -------------------------------------------------------------
 This tool allows you to:
+
 ✔️ Remotely Restart your PC
 
 ✔️ Remotely Shutdown your PC
@@ -17,11 +18,17 @@ This tool allows you to:
 ✔️ Remotely Turn Off your pc Screen
 
 ✔️ Remotely Lock your pc
+
 ✔️ Remotely Run Custom Script On your pc
+
 ✔️ Remotely sleep Your pc
+
 ✔️ Remotely Log Off your pc
+
 ❌ This is NOT full remote access (you can’t see or control screen)
+
 ⭐ This tool Starts automatically on system boot(So You Didn't Wan To Run The Tool Agin)
+
 -------------------------------------------------------------
 🧰 Requirements Before You Start
 -------------------------------------------------------------
