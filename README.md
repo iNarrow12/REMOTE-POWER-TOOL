@@ -1,8 +1,6 @@
 # 🔌 REMOTE POWER TOOL - BY INARROW12 (FULL GUIDE)
 
-===================================================================
-           🔌 REMOTE POWER TOOL - BY INARROW12 (FULL GUIDE)
-===================================================================
+🔌 REMOTE POWER TOOL - BY INARROW12 (FULL GUIDE)
 
 Hi, I'm inarrow12 – the creator of this tool.
 
