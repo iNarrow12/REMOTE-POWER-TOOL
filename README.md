@@ -87,7 +87,7 @@ This tool allows you to:
 
 3. Type the following in the address bar:
 
-   http://<YOUR-IP>:5000
+   http://(YOUR-IP):5000
 
    For example:
    http://192.168.1.12:5000
