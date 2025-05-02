@@ -25,6 +25,10 @@ This tool allows you to:
 
 ✔️ Remotely Log Off your pc
 
+✔️ Remotely Control your pc Brightness And Volume
+
+✔️ Remotely Execute Files And Scripts
+
 ❌ This is NOT full remote access (you can’t see or control screen)
 
 ⭐ This tool Starts automatically on system boot(So You Didn't Wan To Run The Tool Agin)
