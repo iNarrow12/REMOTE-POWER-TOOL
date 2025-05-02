@@ -74,20 +74,14 @@ Dependencies folder :- https://github.com/iNarrow12/REMOTE-POWER-TOOL/tree/main/
 
 🟢 STEP 3: Prepare the Tool Folder
 -----------------------------------------
-1. Copy the entire folder named: `Remote Power Tool` to your DESKTOP
-2. Also copy the `RESTART.bat` file and place it inside that same folder
-
+1. Copy the entire folder named: `Remote Power Tool` to your DESKTOP Folder
 🟢 STEP 4: Run Setup
 -------------------------------
 1. Open the `Remote Power Tool` folder on your Desktop
 2. Double-click on `setup.bat`
 3. Wait for it to complete setup
-
-🟢 STEP 5: Start the Flask Server
----------------------------------
-1. Double-click on the file `RESTART.bat`
-2. A terminal window will open and Flask will start the local web server
-
+4. and restart your pc
+5. And Wait for 5 - 10 seconds
 -------------------------------------------------------------
 📱 HOW TO CONTROL FROM YOUR PHONE
 -------------------------------------------------------------
