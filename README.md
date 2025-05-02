@@ -66,9 +66,9 @@ This tool allows you to:
 
 4. 🟢 STEP 2 Install Dependencies:-
 
-If you download the release to extract the files 
-and you will see the file call Dependencies so click 
-on it and run install dependencies.bat | so will install all the Dependencies
+If you download the release, and extract the files 
+and you will see a file call Dependencies so click 
+on it and run install dependencies.bat | so it will install all the Dependencies
 
 Dependencies folder :- https://github.com/iNarrow12/REMOTE-POWER-TOOL/tree/main/Install%20Dependencies
 
