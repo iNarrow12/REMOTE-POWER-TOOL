@@ -1,0 +1,5 @@
+flask
+pycaw
+comtypes
+pywin32
+screen-brightness-control
