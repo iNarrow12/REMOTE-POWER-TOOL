@@ -33,6 +33,7 @@ This tool allows you to:
 
 ⭐ This tool Starts automatically on system boot(So You Didn't Wan To Run The Tool Agin)
 
+⭐ You Can Run Tool Online Or Offline. it's Not A Matter
 -------------------------------------------------------------
 🧰 Requirements Before You Start
 -------------------------------------------------------------
