@@ -27,7 +27,7 @@ This tool allows you to:
 
 ✔️ Remotely Control your pc Brightness And Volume
 
-✔️ Remotely Execute Files And Scripts
+✔️ Remotely Execute Files And Scripts By Typing Path
 
 ❌ This is NOT full remote access (you can’t see or control screen)
 
