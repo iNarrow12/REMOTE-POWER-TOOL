@@ -111,6 +111,7 @@ Dependencies folder :- https://github.com/iNarrow12/REMOTE-POWER-TOOL/tree/main/
 ⚠️ NOTE:
 • Your phone must be connected to the same Wi-Fi network as your PC.
 • The default port is: 5000
+⭐ You Can Run Tool Online Or Offline. it's Not A Matter
 
 -------------------------------------------------------------
 🛠️ TROUBLESHOOTING
