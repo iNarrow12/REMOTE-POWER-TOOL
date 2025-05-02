@@ -40,7 +40,7 @@ This tool allows you to:
 2. A mobile phone on the SAME Wi-Fi network
 3. Python (latest version) installed
 4. Flask installed using pip
-
+5. Install Dependencies
 -------------------------------------------------------------
 🧪 STEP-BY-STEP SETUP INSTRUCTIONS
 -------------------------------------------------------------
@@ -53,14 +53,22 @@ This tool allows you to:
    👉 “Add Python to PATH”
 4. Complete the installation.
 
-🟢 STEP 2: Install Flask
--------------------------------
+🟢 STEP 2: Install Flask And Dpendeanses
+-----------------------------------------
 1. Open Command Prompt or Terminal
 2. Type the following command:
 
    pip install flask
 
 3. Hit ENTER and wait for installation to complete.
+
+4. 🟢 STEP 2 Install Dependencies:-
+
+If you download the release to extract the files 
+and you will see the file call Dependencies so click 
+on it and run install dependencies.bat | so will install all the Dependencies
+
+Dependencies folder :- https://github.com/iNarrow12/REMOTE-POWER-TOOL/tree/main/Install%20Dependencies
 
 🟢 STEP 3: Prepare the Tool Folder
 -----------------------------------------
