@@ -64,7 +64,7 @@ This tool allows you to:
 
 3. Hit ENTER and wait for installation to complete.
 
-4. 🟢 STEP 2 Install Dependencies:-
+🟢 Install Dependencies:-
 
 If you download the release, and extract the files 
 and you will see a file call Dependencies so click 
