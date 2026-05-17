@@ -21,7 +21,7 @@
 
 ## `$ Screenshots`
 
-![PowerTool Dashboard]()
+![PowerTool Dashboard](https://github.com/iNarrow12/REMOTE-POWER-TOOL/blob/main/src/Screenshot_20260517_125628_Brave.jpg?raw=true)
 
 
 ---
@@ -34,7 +34,7 @@
 ├── README.md
 ├── go.mod
 ├── go.sum
-└── screenshots/
+└── src/
 
 ```
 
