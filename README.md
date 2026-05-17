@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&height=300&text=POWERTOOL&textBg=false&fontColor=00f0ff&fontAlignY=42)
+![header](https://capsule-render.vercel.app/api?type=waving&height=300&text=POWERTOOL&textBg=false&fontColor=ffffff&fontAlignY=42)
 
 ![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-Tailwind-FF69B4?style=for-the-badge&logo=tailwindcss&logoColor=white)
