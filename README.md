@@ -1,134 +1,56 @@
-# 🔌 REMOTE POWER TOOL - BY INARROW12 (FULL GUIDE)
+<h1 align="center">
+  <br>
+  <img src="https://img.shields.io/badge/POWER__TOOL-Engine%20v3.4-00f0ff?style=for-the-badge&logo=go&logoColor=white&labelColor=050505" alt="PowerTool">
+</h1>
 
-🔌 REMOTE POWER TOOL - BY INARROW12 (FULL GUIDE)
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-api-endpoints">API Endpoints</a> •
+  <a href="#-installation--usage">Installation</a> •
+  <a href="#-security">Security</a>
+</p>
 
-Hi, I'm inarrow12 – the creator of this tool.
+---
 
-This guide will help you set up and use the REMOTE POWER TOOL to control your Windows PC from your mobile browser.
+A lightweight, high-performance cross-platform system utility written in Go. It provisions a sleek, mobile-optimized cyberpunk web GUI to remotely monitor, find, and execute hardware power functions on your machine.
 
--------------------------------------------------------------
-📌 What Does This Tool Do?
--------------------------------------------------------------
-This tool allows you to:
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform Supported">
+  <img src="https://img.shields.io/badge/Go-1.18+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go Version">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.0+-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind Version">
+</p>
 
-✔️ Remotely Restart your PC
+## ⚡ Features
 
-✔️ Remotely Shutdown your PC
+- **🎯 Device Finder:** High-frequency, aggressive high-low siren sequencer (PowerShell) or hardware alert bell/audio fallbacks (`aplay`/`beep`) on Linux to find your misplaced machine instantly.
+- **🖥️ Hardware Sliders:** Smooth inline adjustments for target operating system volume and screen brightness metrics.
+- **🔒 Secure Architecture:** Bearer authorization tokens natively validating downstream layout manipulation payloads.
+- **🔋 Power State Control:** Low-latency triggers for `Shutdown`, `Restart`, `Sleep`, and desktop console environment locking state sessions.
+- **📱 Responsive UI:** Micro-engineered, auto-scaling `100dvh` flex-grid layout intentionally tailored to match viewport dimensions perfectly without scrolling container overflow.
 
-✔️ Remotely Turn Off your pc Screen
+## 🛠️ Tech Stack
 
-✔️ Remotely Lock your pc
+- **Backend core logic:** [Go](https://go.dev/) (Native `net/http` multiplexer context handlers)
+- **Frontend styling components:** HTML5, [Tailwind CSS CDN](https://tailwindcss.com), Custom Glassmorphism Panels
+- **OS Interfacing bindings:** [volume-go](https://github.com/itchyny/volume-go) framework wrapper, Windows Win32 API extensions via PowerShell wrappers
 
-✔️ Remotely Run Custom Script On your pc
+## 🛣️ API Endpoints
 
-✔️ Remotely sleep Your pc
+All downstream executions are bound under token protection patterns:
 
-✔️ Remotely Log Off your pc
+| Method | Route | Authorization Header | Payload Definition (`JSON`) | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **POST** | `/api/v1/power` | `Bearer <your-super-secure-token>` | `{"action": "find"\|"shutdown"\|"volume_set", "value": 0}` | Fires underlying host automation scripts. |
+| **GET** | `/` | *None* | *None* | Generates the responsive web UI asset panel. |
 
-✔️ Remotely Control your pc Brightness And Volume
+## 🚀 Installation & Usage
 
-✔️ Remotely Execute Files And Scripts By Typing Path
+### Prerequisites
+Make sure Go is installed and configured along with necessary platform libraries:
+```bash
+# Clone or move into your project development environment
+cd power_tool
 
-❌ This is NOT full remote access (you can’t see or control screen)
-
-⭐ This tool Starts automatically on system boot(So You Didn't Wan To Run The Tool Agin)
-
-⭐ You Can Run Tool Online Or Offline. it's Not A Matter
-
--------------------------------------------------------------
-🧰 Requirements Before You Start
--------------------------------------------------------------
-1. A Windows PC
-2. A mobile phone on the SAME Wi-Fi network
-3. Python (latest version) installed
-4. Flask installed using pip
-5. Install Dependencies
--------------------------------------------------------------
-🧪 STEP-BY-STEP SETUP INSTRUCTIONS
--------------------------------------------------------------
-
-🟢 STEP 1: Install Python (if not already installed)
----------------------------------------------------
-1. Go to: https://www.python.org/downloads/
-2. Download the latest version for Windows
-3. Install it and MAKE SURE to check the box:
-   👉 “Add Python to PATH”
-4. Complete the installation.
-
-🟢 STEP 2: Install Flask And Dpendeanses
------------------------------------------
-1. Open Command Prompt or Terminal
-2. Type the following command:
-
-   pip install flask
-
-3. Hit ENTER and wait for installation to complete.
-
-🟢 Install Dependencies:-
-
-If you download the release, and extract the files 
-and you will see a file call Dependencies so click 
-on it and run install dependencies.bat | so it will install all the Dependencies
-
-Dependencies folder :- https://github.com/iNarrow12/REMOTE-POWER-TOOL/tree/main/Install%20Dependencies
-
-🟢 STEP 3: Prepare the Tool Folder
------------------------------------------
-1. Copy the entire folder named: `Remote Power Tool` to your DESKTOP Folder
-🟢 STEP 4: Run Setup
--------------------------------
-1. Open the `Remote Power Tool` folder on your Desktop
-2. Double-click on `setup.bat`
-3. Wait for it to complete setup
-4. and restart your pc
-5. And Wait for 5 - 10 seconds
--------------------------------------------------------------
-📱 HOW TO CONTROL FROM YOUR PHONE
--------------------------------------------------------------
-
-1. On your PC, check your IP address:
-   - Open Command Prompt
-   - Type: ipconfig
-   - Look for: `IPv4 Address` (e.g., 192.168.1.12)
-
-2. On your phone, open a web browser (Chrome, Firefox, etc.)
-
-3. Type the following in the address bar:
-
-   http://(YOUR-IP):5000
-
-   For example:
-   http://192.168.1.12:5000
-
-4. You’ll see the Remote Power Tool interface.
-
-⚠️ NOTE:
-• Your phone must be connected to the same Wi-Fi network as your PC.
-• The default port is: 5000
-⭐ You Can Run Tool Online Or Offline. it's Not A Matter
-
--------------------------------------------------------------
-🛠️ TROUBLESHOOTING
--------------------------------------------------------------
-
-❌ Flask Not Found?
-✔️ Make sure you typed `pip install flask` correctly and that Python is installed.
-
-❌ Website not loading on phone?
-✔️ Check your IP address again
-✔️ Ensure port 5000 is not blocked by firewall
-✔️ Try turning off Windows Firewall temporarily (for testing)
-
--------------------------------------------------------------
-📌 ABOUT
--------------------------------------------------------------
-• Made with ❤️ using Python + Flask
-• Lightweight and beginner-friendly
-• For personal, educational use only
-
--------------------------------------------------------------
-✅ You're now ready to use REMOTE POWER TOOL!
--------------------------------------------------------------
-   Enjoy the power – from your pocket 😉
-   – inarrow12
-===================================================================
+# Ensure required libraries are resolved
+go mod download
