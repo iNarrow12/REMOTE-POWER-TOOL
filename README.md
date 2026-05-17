@@ -1,56 +1,159 @@
-<h1 align="center">
-  <br>
-  <img src="https://img.shields.io/badge/POWER__TOOL-Engine%20v3.4-00f0ff?style=for-the-badge&logo=go&logoColor=white&labelColor=050505" alt="PowerTool">
-</h1>
+<div align="center">
 
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-api-endpoints">API Endpoints</a> •
-  <a href="#-installation--usage">Installation</a> •
-  <a href="#-security">Security</a>
-</p>
+![header](https://capsule-render.vercel.app/api?type=waving&height=300&text=POWERTOOL&textBg=false&fontColor=00f0ff&fontAlignY=42)
+
+![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Tailwind-FF69B4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-34A853?style=for-the-badge)
+
+</div>
 
 ---
 
-A lightweight, high-performance cross-platform system utility written in Go. It provisions a sleek, mobile-optimized cyberpunk web GUI to remotely monitor, find, and execute hardware power functions on your machine.
+## `$ Overview`
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=flat-square" alt="Platform Supported">
-  <img src="https://img.shields.io/badge/Go-1.18+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go Version">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.0+-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind Version">
-</p>
+**PowerTool** is a sleek, lightweight, and beautiful remote system control panel built in **Go**. It turns any browser into a powerful command center to control your PC — Shutdown, Restart, Volume, Brightness, Lock, and even a loud **Find My Device** siren.
 
-## ⚡ Features
+> **Aesthetic**: Cyber-Neon Glassmorphism  
+> **Philosophy**: Maximum control with minimum friction.
 
-- **🎯 Device Finder:** High-frequency, aggressive high-low siren sequencer (PowerShell) or hardware alert bell/audio fallbacks (`aplay`/`beep`) on Linux to find your misplaced machine instantly.
-- **🖥️ Hardware Sliders:** Smooth inline adjustments for target operating system volume and screen brightness metrics.
-- **🔒 Secure Architecture:** Bearer authorization tokens natively validating downstream layout manipulation payloads.
-- **🔋 Power State Control:** Low-latency triggers for `Shutdown`, `Restart`, `Sleep`, and desktop console environment locking state sessions.
-- **📱 Responsive UI:** Micro-engineered, auto-scaling `100dvh` flex-grid layout intentionally tailored to match viewport dimensions perfectly without scrolling container overflow.
+---
 
-## 🛠️ Tech Stack
+## `$ Screenshots`
 
-- **Backend core logic:** [Go](https://go.dev/) (Native `net/http` multiplexer context handlers)
-- **Frontend styling components:** HTML5, [Tailwind CSS CDN](https://tailwindcss.com), Custom Glassmorphism Panels
-- **OS Interfacing bindings:** [volume-go](https://github.com/itchyny/volume-go) framework wrapper, Windows Win32 API extensions via PowerShell wrappers
+![PowerTool Dashboard]()
 
-## 🛣️ API Endpoints
 
-All downstream executions are bound under token protection patterns:
+---
 
-| Method | Route | Authorization Header | Payload Definition (`JSON`) | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| **POST** | `/api/v1/power` | `Bearer <your-super-secure-token>` | `{"action": "find"\|"shutdown"\|"volume_set", "value": 0}` | Fires underlying host automation scripts. |
-| **GET** | `/` | *None* | *None* | Generates the responsive web UI asset panel. |
+## `$ Tree Overview`
 
-## 🚀 Installation & Usage
+```
+.
+├── main.go                    # Complete single-file backend + embedded UI
+├── README.md
+├── go.mod
+├── go.sum
+└── screenshots/
 
-### Prerequisites
-Make sure Go is installed and configured along with necessary platform libraries:
+```
+
+---
+
+## `$ Features`
+
+| Feature              | Description |
+|----------------------|-----------|
+| **Power Actions**    | Shutdown, Restart, Sleep, Lock |
+| **Find Device**      | Loud siren / beep locator |
+| **Volume Control**   | Real-time system volume slider |
+| **Brightness Control** | Screen brightness adjustment (Windows) |
+| **Modern UI**        | Glassmorphic neon cyber interface |
+| **Secure API**       | Bearer Token authentication |
+| **Cross Platform**   | Works on Windows and Linux |
+
+---
+
+## `$ Supported Platforms`
+
+| Action             | Windows | Linux |
+|--------------------|---------|-------|
+| Shutdown           | ✅      | ✅    |
+| Restart            | ✅      | ✅    |
+| Sleep              | ✅      | ✅    |
+| Lock               | ✅      | ✅    |
+| Find (Siren)       | ✅      | ✅    |
+| Volume Control     | ✅      | ✅    |
+| Brightness         | ✅      | ❌    |
+
+---
+
+## `$ Configuration`
+
+Edit the constants at the top of `main.go`:
+
+```go
+const (
+    AdminToken = "your-super-secure-token"   // ← CHANGE THIS!
+    Port       = ":8080"
+)
+```
+
+---
+
+## `$ Installation`
+
 ```bash
-# Clone or move into your project development environment
-cd power_tool
+git clone https://github.com/iNarrow12/PowerTool.git
+cd PowerTool
+```
 
-# Ensure required libraries are resolved
-go mod download
+### Build & Run
+
+```bash
+# Run directly
+go run main.go
+
+# Or build binary
+go build -o powertool main.go
+./powertool
+```
+
+Open browser → `http://localhost:8080`
+
+---
+
+## `$ Usage`
+
+| URL                    | Description |
+|------------------------|-----------|
+| `http://localhost:8080` | Main Control Panel |
+| `/api/v1/power`        | Protected JSON API endpoint |
+
+**Quick Actions Available:**
+- **Ping** → Trigger loud find-my-device siren
+- **Lock** → Instantly lock the screen
+- **Sleep** → Put system to sleep
+- **Restart** / **Shutdown** → Power commands
+
+---
+
+## `$ Attack Surface / Security`
+
+- Protected with **Bearer Token** authentication
+- Intended for **local network** use only
+- **Do not expose directly to the internet** without reverse proxy + strong auth
+
+---
+
+## `$ Tech Stack`
+
+- **Language**: Go
+- **UI**: Tailwind CSS + Custom Neon Glassmorphism
+- **Volume**: [volume-go](https://github.com/itchyny/volume-go)
+- **Single Binary** — No dependencies after build
+
+---
+
+## `$ Future Plans`
+
+- [ ] WebSocket real-time status
+- [ ] Docker support
+- [ ] Multi-device dashboard
+- [ ] Linux brightness support (`brightnessctl`)
+- [ ] Authentication UI page
+- [ ] Logging & history
+
+---
+
+## `$ License`
+
+MIT — Free to use for personal and educational purposes.
+
+<div align="center">
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=100&section=footer)
+
+**Made with 🔥 by iNarrow12**
+
+</div>
